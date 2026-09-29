@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>jobible_ 홈 시안 (확정 C안, 데스크톱 1280px)</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+</head>
+<body>
+<!-- 확정 시안 참고용 정적 HTML. 구현 코드가 아니라 레이아웃·색·간격의 기준이다. -->
+<style>
+body{margin:0;font-family:'Pretendard','Malgun Gothic',sans-serif;background:#FFFFFF;color:#222222}
+a{color:#222222}a:hover{color:#E00B41}
+</style>
+<div style="width: 1280px; min-height: 2600px; margin: 0 auto; box-sizing: border-box; background: #FFFFFF; color: #222222; font-family: 'Pretendard', 'Malgun Gothic', sans-serif; display: flex; flex-direction: column;">
+
+  <nav style="height: 80px; box-sizing: border-box; padding: 0 80px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #EBEBEB;">
+    <div style="display: flex; align-items: center; gap: 8px;">
+      <div style="width: 28px; height: 28px; border-radius: 50%; background: #FF385C; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-size: 15px; font-weight: 800;">j</div>
+      <div style="font-size: 21px; font-weight: 700; letter-spacing: -0.4px; color: #E00B41;">jobible_</div>
+    </div>
+    <div style="display: flex; align-items: center; gap: 4px; font-size: 15px; font-weight: 600;">
+      <a href="#services" style="padding: 12px 16px; border-radius: 999px; text-decoration: none;">서비스</a>
+      <a href="#archive" style="padding: 12px 16px; border-radius: 999px; text-decoration: none;">보관함</a>
+      <a href="#about" style="padding: 12px 16px; border-radius: 999px; text-decoration: none;">About</a>
+    </div>
+  </nav>
+
+  <header style="padding: 88px 80px 0; display: flex; flex-direction: column; align-items: center; gap: 24px; text-align: center;">
+    <div style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: #FFF0F3; color: #C0123C; font-size: 13px; font-weight: 600;"><div style="width: 6px; height: 6px; border-radius: 50%; background: #FF385C;"></div>3개 서비스 운영 중</div>
+    <h1 style="margin: 0; font-size: 52px; line-height: 1.22; font-weight: 700; letter-spacing: -1.4px;">작지만, <span style="color: #92174D;">실제로 쓰이는</span><br>서비스를 만듭니다</h1>
+    <p style="margin: 0; max-width: 620px; font-size: 18px; line-height: 1.6; color: #6A6A6A;">기업 AI 에이전트를 설계하는 박준형이 교회와 가족, 일상의 작은 문제를 풀려고 퇴근 후 만들어 온 jobible_ 시리즈입니다.</p>
+    <div style="margin-top: 16px; display: flex; align-items: center; height: 72px; padding: 0 8px 0 8px; border-radius: 999px; border: 1px solid #DDDDDD; background: #FFFFFF; box-shadow: 0 0 0 1px rgba(0,0,0,0.02), 0 2px 6px rgba(0,0,0,0.04), 0 6px 16px rgba(0,0,0,0.08);">
+      <a href="#services" style="display: flex; flex-direction: column; align-items: flex-start; gap: 2px; padding: 0 28px; text-decoration: none; border-right: 1px solid #EBEBEB;">
+        <div style="font-size: 12px; font-weight: 700;">교회</div><div style="font-size: 14px; color: #6A6A6A;">시설·차량 예약</div>
+      </a>
+      <a href="#services" style="display: flex; flex-direction: column; align-items: flex-start; gap: 2px; padding: 0 28px; text-decoration: none; border-right: 1px solid #EBEBEB;">
+        <div style="font-size: 12px; font-weight: 700;">제자훈련</div><div style="font-size: 14px; color: #6A6A6A;">참고 자료</div>
+      </a>
+      <a href="#services" style="display: flex; flex-direction: column; align-items: flex-start; gap: 2px; padding: 0 28px; text-decoration: none;">
+        <div style="font-size: 12px; font-weight: 700;">시니어</div><div style="font-size: 14px; color: #6A6A6A;">매일 좋은 글귀</div>
+      </a>
+      <a href="#services" aria-label="서비스 보기" style="width: 52px; height: 52px; border-radius: 50%; background: #E00B41; display: flex; align-items: center; justify-content: center; margin-left: 8px;">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9h10M10 5l4 4-4 4" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      </a>
+    </div>
+  </header>
+
+  <section id="services" style="padding: 104px 80px 0; display: flex; flex-direction: column; gap: 28px;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline;">
+      <h2 style="margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -0.5px;">운영 중인 서비스</h2>
+      <div style="font-size: 15px; color: #6A6A6A;">필요한 사람 곁에서 시작했습니다</div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px;">
+      <article style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="position: relative; height: 300px; border-radius: 20px; background: #F2F2F2; overflow: hidden;">
+          <div style="position: absolute; left: 14px; top: 14px; padding: 7px 12px; border-radius: 999px; background: #FFFFFF; font-size: 13px; font-weight: 600; box-shadow: 0 2px 6px rgba(0,0,0,0.08);">교회에서 실제 사용 중</div>
+          <div style="position: absolute; left: 20px; right: 20px; bottom: 20px; top: 64px; border-radius: 14px; background: #FFFFFF; padding: 16px; display: flex; flex-direction: column; gap: 8px; font-size: 13px;">
+            <div style="font-weight: 700; font-size: 14px;">이번 주 시설 예약</div>
+            <div style="display: flex; justify-content: space-between; padding: 10px 12px; border-radius: 10px; background: #F7F7F7;"><div style="font-weight: 600;">소예배실</div><div style="color: #6A6A6A;">일 14:00</div></div>
+            <div style="display: flex; justify-content: space-between; padding: 10px 12px; border-radius: 10px; background: #F7F7F7;"><div style="font-weight: 600;">교육관 2실</div><div style="color: #6A6A6A;">수 19:30</div></div>
+            <div style="display: flex; justify-content: space-between; padding: 10px 12px; border-radius: 10px; background: #F7F7F7;"><div style="font-weight: 600;">교회 승합차</div><div style="color: #6A6A6A;">토 09:00</div></div>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h3 style="margin: 0; font-size: 17px; font-weight: 700;">jobible_onspot</h3>
+            <div style="display: flex; align-items: center; gap: 5px; font-size: 14px;"><div style="width: 7px; height: 7px; border-radius: 50%; background: #FF385C;"></div>운영 중</div>
+          </div>
+          <div style="font-size: 15px; color: #6A6A6A;">낙원제일교회 · Next.js, Turso</div>
+          <p style="margin: 4px 0 0; font-size: 15px; line-height: 1.55; color: #3F3F3F;">교회 시설과 차량 예약을 한곳에서 관리합니다. 승인 결과는 카카오 알림톡으로 받습니다.</p>
+        </div>
+      </article>
+      <article style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="position: relative; height: 300px; border-radius: 20px; background: #F2F2F2; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #929292;">
+          <div style="position: absolute; left: 14px; top: 14px; padding: 7px 12px; border-radius: 999px; background: #FFFFFF; color: #222222; font-size: 13px; font-weight: 600; box-shadow: 0 2px 6px rgba(0,0,0,0.08);">제자훈련반 참고</div>
+          스크린샷 · way
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h3 style="margin: 0; font-size: 17px; font-weight: 700;">jobible_way</h3>
+            <div style="display: flex; align-items: center; gap: 5px; font-size: 14px;"><div style="width: 7px; height: 7px; border-radius: 50%; background: #FF385C;"></div>운영 중</div>
+          </div>
+          <div style="font-size: 15px; color: #6A6A6A;">제자훈련 · [기술 스택]</div>
+          <p style="margin: 4px 0 0; font-size: 15px; line-height: 1.55; color: #3F3F3F;">제자훈련 과정에서 필요한 참고 자료를 한곳에 정리한 페이지입니다.</p>
+        </div>
+      </article>
+      <article style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="position: relative; height: 300px; border-radius: 20px; background: #F2F2F2; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #929292;">
+          <div style="position: absolute; left: 14px; top: 14px; padding: 7px 12px; border-radius: 999px; background: #FFFFFF; color: #222222; font-size: 13px; font-weight: 600; box-shadow: 0 2px 6px rgba(0,0,0,0.08);">시니어를 위한 글귀</div>
+          스크린샷 · goodday
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h3 style="margin: 0; font-size: 17px; font-weight: 700;">jobible_goodday</h3>
+            <div style="display: flex; align-items: center; gap: 5px; font-size: 14px;"><div style="width: 7px; height: 7px; border-radius: 50%; background: #FF385C;"></div>운영 중</div>
+          </div>
+          <div style="font-size: 15px; color: #6A6A6A;">시니어 · [기술 스택]</div>
+          <p style="margin: 4px 0 0; font-size: 15px; line-height: 1.55; color: #3F3F3F;">아버지 같은 시니어 세대를 위해 매일 좋은 글귀를 모아 전합니다. 큰 글씨, 단순한 화면.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="archive" style="padding: 96px 80px 0; display: flex; flex-direction: column; gap: 20px;">
+    <h2 style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.3px;">지난 실험들</h2>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px;">
+      <div style="display: flex; align-items: center; gap: 16px; padding: 16px; border-radius: 14px; background: #F7F7F7;">
+        <div style="width: 56px; height: 56px; border-radius: 10px; background: #EBEBEB; flex-shrink: 0;"></div>
+        <div style="display: flex; flex-direction: column; gap: 2px; flex-grow: 1;">
+          <div style="font-size: 16px; font-weight: 600;">jobible_soulscribe</div>
+          <div style="font-size: 14px; color: #6A6A6A;">매일 명언을 필사하며 영어를 익히는 학습 앱</div>
+        </div>
+        <div style="font-size: 13px; color: #929292;">휴식 중</div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 16px; padding: 16px; border-radius: 14px; background: #F7F7F7;">
+        <div style="width: 56px; height: 56px; border-radius: 10px; background: #EBEBEB; flex-shrink: 0;"></div>
+        <div style="display: flex; flex-direction: column; gap: 2px; flex-grow: 1;">
+          <div style="font-size: 16px; font-weight: 600;">jobible_bizeng</div>
+          <div style="font-size: 14px; color: #6A6A6A;">영어 면접 대비를 위한 비즈니스 영어 연습 앱</div>
+        </div>
+        <div style="font-size: 13px; color: #929292;">휴식 중</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" style="padding: 104px 80px 0; display: grid; grid-template-columns: 420px minmax(0, 1fr); gap: 72px; align-items: center;">
+    <div style="border-radius: 24px; background: #FFFFFF; padding: 32px; box-shadow: 0 6px 24px rgba(0,0,0,0.12); display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 24px; align-items: center;">
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+        <div style="width: 104px; height: 104px; border-radius: 50%; background: #222222; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 40px; font-weight: 700;">준</div>
+        <div style="font-size: 26px; font-weight: 700;">박준형</div>
+        <div style="font-size: 13px; font-weight: 600;">AX Team Lead</div>
+      </div>
+      <div style="display: flex; flex-direction: column;">
+        <div style="padding: 10px 0; border-bottom: 1px solid #DDDDDD;"><div style="font-size: 22px; font-weight: 700; color: #92174D;">21년+</div><div style="font-size: 12px; font-weight: 600;">IT 경력</div></div>
+        <div style="padding: 10px 0; border-bottom: 1px solid #DDDDDD;"><div style="font-size: 22px; font-weight: 700; color: #92174D;">3</div><div style="font-size: 12px; font-weight: 600;">운영 중 서비스</div></div>
+        <div style="padding: 10px 0;"><div style="font-size: 22px; font-weight: 700; color: #92174D;">5</div><div style="font-size: 12px; font-weight: 600;">jobible_ 시리즈</div></div>
+      </div>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 20px;">
+      <h2 style="margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -0.5px;">만든 사람을 소개합니다</h2>
+      <p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3F3F3F;">에이다루트에서 대기업 AI 에이전트 프로젝트를 이끌고 있습니다. LangChain, LangGraph, RAG, Vector DB로 일하고, 회사에서 배운 것을 주말에 작게 만들어 봅니다. 그중 쓸모 있는 것은 계속 운영합니다.</p>
+      <div style="display: flex; flex-direction: column; gap: 6px; font-size: 15px; color: #3F3F3F;">
+        <div>이메일 · [이메일 주소]</div>
+        <div>LinkedIn · [LinkedIn 주소]</div>
+      </div>
+      <div style="display: flex; gap: 10px; padding-top: 4px;">
+        <button type="button" style="height: 48px; padding: 0 24px; border-radius: 8px; border: 0; background: #E00B41; color: #FFFFFF; font-family: inherit; font-size: 16px; font-weight: 600;">이메일 주소 복사</button>
+        <a href="#" style="display: inline-flex; align-items: center; height: 48px; padding: 0 24px; border-radius: 8px; border: 1px solid #222222; color: #222222; font-size: 16px; font-weight: 600; text-decoration: none;">LinkedIn 열기</a>
+      </div>
+    </div>
+  </section>
+
+  <footer style="margin-top: auto; background: #F7F7F7; border-top: 1px solid #DDDDDD; padding: 32px 80px 40px; display: flex; justify-content: space-between; align-items: center; font-size: 14px; color: #6A6A6A;">
+    <div>© 2026 박준형 · jobible_</div>
+    <div style="display: flex; gap: 20px;"><a href="#services" style="color: #222222; text-decoration: none;">서비스</a><a href="#about" style="color: #222222; text-decoration: none;">About</a></div>
+  </footer>
+</div>
+</body>
+</html>
