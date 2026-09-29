@@ -3,6 +3,27 @@
 > 기획·디자인 단계(Claude 데스크톱 앱)에서 확정된 내용을 구현 단계(Claude Code CLI)로 넘기는 문서.
 > 작성: 2026-09-29
 
+## 현재 상태 (2026-09-29 완료)
+
+1~7단계를 모두 마치고 https://jobible.co.kr 에서 운영 중이다. 운영 정보는 5장 아래, 작업 이력은 `git log` 참고.
+
+| 단계 | 결과 |
+|---|---|
+| 1~4 | 섹션 전체 구현. 콘텐츠는 `src/data/projects.ts` 한 곳 |
+| 5 | 360/390/768/1024/1280px 가로 스크롤 없음, 모바일 터치 대상 44px |
+| 6 | 메타데이터·OG 이미지·아이콘. Lighthouse 접근성·권장사항·SEO 100 |
+| 7 | Vercel 배포, `jobible.co.kr` 연결(www → 루트 308), HTTPS |
+| 추가 | 사용 글자만 담은 폰트 서브셋(71KB 1개)으로 모바일 성능 97~99 안정 |
+
+구현 중 바뀐 결정:
+- 브랜드 표기는 `joBiBle_` (대소문자 구분). `jobible_goodday` → `joBiBle_goldendays`
+- onspot 메타는 저장소 기준 "Next.js, SQLite"
+- About 소개는 LinkedIn 프로필 기준으로 수정, 직함은 "AX Team Lead" 유지
+- "휴식 중" 글씨는 대비 확보를 위해 `muted` (DESIGN.md 반영)
+- 정적 사이트라 Codex 코드 점검은 생략. 입력 폼·API 등 기능 추가 시 8장 기준으로 진행
+
+남은 선택 항목: About 아바타 사진
+
 ## 0. CLI에 처음 붙여넣을 프롬프트
 
 ```
@@ -141,6 +162,8 @@ Pretendard는 `pretendard` npm 패키지의 dynamic subset CSS를 쓰는 것을 
 - 기존 PHP 호스팅을 바로 해지하지 않으려면 `legacy.` 같은 서브도메인으로 남겨둘 수 있다.
 
 ## 8. 리뷰 단계 (Codex) 점검 포인트
+
+> 2026-09-29: 아래 항목은 구현 중 모두 확인했다(Lighthouse 접근성 100, 클립보드 실패 3가지 테스트 등). 정적 사이트라 별도 점검은 생략하고, 기능을 추가할 때 다시 본다.
 
 - 접근성: 대비(흰 글씨 버튼 `#E00B41`), 포커스 표시, 실제 `button`/`a` 사용, 이미지 alt
 - 외부 링크 `rel="noopener noreferrer"`
