@@ -139,3 +139,10 @@ export const about = {
 export const footer = {
   copyright: "© 2026 박준형 · jobible_",
 };
+
+// 상단 메뉴·푸터에서 함께 쓰는 앵커 링크
+export const navLinks = [
+  { label: "서비스", href: "#services" },
+  { label: "보관함", href: "#archive" },
+  { label: "About", href: "#about" },
+];

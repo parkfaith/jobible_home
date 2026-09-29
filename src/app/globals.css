@@ -78,6 +78,8 @@ body {
   background: var(--color-canvas);
   color: var(--color-ink);
   font-family: var(--font-sans);
+  /* 한글 단어 중간에서 줄바꿈되지 않도록 */
+  word-break: keep-all;
 }
 
 h1,
