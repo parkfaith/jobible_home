@@ -85,12 +85,18 @@ jobible_ 시리즈(가족·교회·일상의 문제를 푸는 개인 서비스)�
 
 ## 5. 오너가 채워야 할 항목 (구현 중 TODO 주석으로 표시)
 
-- [ ] 서비스 3개의 공개 URL
-- [ ] 서비스별 스크린샷 1장씩 → `public/screens/onspot.png` 등 (권장 1600×1200, onspot은 개인정보가 안 보이는 화면)
-- [ ] jobible_way, jobible_goodday의 기술 스택
-- [ ] 공개할 이메일 주소, LinkedIn URL
-- [ ] 연결할 도메인 이름
+- [x] 서비스 3개의 공개 URL
+- [x] 서비스별 스크린샷 1장씩 → `public/screens/onspot.png` 등 (권장 1600×1200, onspot은 개인정보가 안 보이는 화면)
+- [x] jobible_way, jobible_goodday의 기술 스택 (goodday는 joBiBle_goldendays로 이름 변경)
+- [x] 공개할 이메일 주소, LinkedIn URL
+- [x] 연결할 도메인 이름 → `jobible.co.kr` (2026-09-29 연결)
 - [ ] (선택) About 아바타 사진. 없으면 "준" 이니셜 원형 유지
+
+### 운영 정보 (2026-09-29 7단계 완료 기준)
+- 대표 주소: https://jobible.co.kr (`www.jobible.co.kr`은 308로 루트 이동)
+- Vercel 프로젝트 `jobible-home`, GitHub `main` push 시 자동 배포 (기본 주소 https://jobible-home.vercel.app)
+- 도메인 등록: 호스팅케이알, 네임서버: `ns1/ns2.vercel-dns.com` (DNS 레코드는 Vercel이 관리)
+- Vercel 환경변수: `NEXT_PUBLIC_SITE_URL=https://jobible.co.kr` (Config, Production). 바꾸면 재배포 필요
 
 스크린샷이 없어도 회색 자리표시로 먼저 구현한다. `projects.ts`에서 이미지 경로가 비어 있으면 자리표시를 보여준다.
 
