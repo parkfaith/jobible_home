@@ -140,8 +140,9 @@ export const about = {
     { value: String(liveProjects.length + pastProjects.length), label: "joBiBle_ 시리즈" },
   ] satisfies Stat[],
   title: "만든 사람을 소개합니다",
+  // LinkedIn 소개(2026-09 기준)를 요약. 경력 시작 2004-11 → 통계 "21년+"
   intro:
-    "에이다루트에서 대기업 AI 에이전트 프로젝트를 이끌고 있습니다. LangChain, LangGraph, RAG, Vector DB로 일하고, 회사에서 배운 것을 주말에 작게 만들어 봅니다. 그중 쓸모 있는 것은 계속 운영합니다.",
+    "20년 넘게 개발자와 PM으로 일해 왔고, 지금은 에이다루트에서 대기업·엔터프라이즈 고객을 위한 LLM 기반 AI Agent 프로젝트를 제안부터 기획·구축·운영까지 이끌고 있습니다. AI Agent, RAG, LangChain으로 일하며 회사에서 배운 것을 주말에 작게 만들어 봅니다. 그중 쓸모 있는 것은 계속 운영합니다.",
   email: "parkfaith75@gmail.com",
   linkedin: {
     href: "https://www.linkedin.com/in/ryanpark75korea/",
