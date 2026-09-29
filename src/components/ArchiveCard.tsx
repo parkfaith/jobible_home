@@ -13,7 +13,8 @@ export default function ArchiveCard({ project }: { project: Project }) {
         {project.image && (
           <Image
             src={project.image}
-            alt={project.imageAlt ?? `${project.name} 화면`}
+            // 이름이 바로 옆에 있으므로 장식 이미지로 처리
+            alt=""
             fill
             sizes="56px"
             className="object-cover"

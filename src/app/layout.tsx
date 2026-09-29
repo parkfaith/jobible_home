@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import "pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css";
 import "./globals.css";
+import { brand, hero } from "@/data/projects";
 
 export const metadata: Metadata = {
-  title: "jobible_ · 박준형",
-  description:
-    "기업 AI 에이전트를 설계하는 박준형이 교회와 가족, 일상의 작은 문제를 풀려고 만들어 온 jobible_ 시리즈입니다.",
+  title: `${brand} · 박준형`,
+  description: hero.subtitle,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
