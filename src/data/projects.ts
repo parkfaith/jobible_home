@@ -109,6 +109,8 @@ export const hero = {
 export const servicesSection = {
   title: "운영 중인 서비스",
   tagline: "필요한 사람 곁에서 시작했습니다",
+  liveLabel: "운영 중",
+  placeholderLabel: "스크린샷",
 };
 
 export const archiveSection = {
