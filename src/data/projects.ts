@@ -37,43 +37,37 @@ export const liveProjects: Project[] = [
     name: "jobible_onspot",
     status: "live",
     badge: "교회에서 실제 사용 중",
-    meta: "낙원제일교회 · Next.js, Turso",
+    // 저장소 기준 Prisma + SQLite (HANDOFF 초안의 Turso는 저장소에서 확인되지 않음)
+    meta: "낙원제일교회 · Next.js, SQLite",
     description:
       "교회 시설과 차량 예약을 한곳에서 관리합니다. 승인 결과는 카카오 알림톡으로 받습니다.",
-    // TODO(owner): 공개 URL
-    url: undefined,
-    // TODO(owner): public/screens/onspot.png (1600×1200, 개인정보가 안 보이는 화면)
-    image: undefined,
-    imageAlt: "jobible_onspot 시설·차량 예약 화면",
+    url: "https://booking.i-nakwon.com",
+    // 공개 예약 첫 화면 (개인정보 없음)
+    image: "/screens/onspot.png",
+    imageAlt: "jobible_onspot 공간 예약 화면. 말로 예약하기 버튼과 안내 문구가 보인다.",
   },
   {
     slug: "way",
     name: "jobible_way",
     status: "live",
     badge: "제자훈련반 참고",
-    // TODO(owner): 기술 스택 확인 후 교체
-    meta: "제자훈련 · [기술 스택]",
+    meta: "제자훈련 · React, Hono, Turso",
     description: "제자훈련 과정에서 필요한 참고 자료를 한곳에 정리한 페이지입니다.",
-    // TODO(owner): 공개 URL
-    url: undefined,
-    // TODO(owner): public/screens/way.png
-    image: undefined,
-    imageAlt: "jobible_way 제자훈련 참고 자료 화면",
+    url: "https://jobible-way.vercel.app",
+    image: "/screens/way.png",
+    imageAlt: "jobible Way 시작 화면. '제자의 길을 걷는 여정' 문구와 시작하기 버튼이 보인다.",
   },
   {
     slug: "goodday",
     name: "jobible_goodday",
     status: "live",
     badge: "시니어를 위한 글귀",
-    // TODO(owner): 기술 스택 확인 후 교체
-    meta: "시니어 · [기술 스택]",
+    meta: "시니어 · React, Vite, PWA",
     description:
       "아버지 같은 시니어 세대를 위해 매일 좋은 글귀를 모아 전합니다. 큰 글씨, 단순한 화면.",
-    // TODO(owner): 공개 URL
-    url: undefined,
-    // TODO(owner): public/screens/goodday.png
-    image: undefined,
-    imageAlt: "jobible_goodday 오늘의 글귀 화면",
+    url: "https://jobible-golden-days.vercel.app",
+    image: "/screens/goodday.png",
+    imageAlt: "Golden Days 오늘의 이야기 화면. 날씨 배너와 큰 글씨 성경 구절 카드가 보인다.",
   },
 ];
 
@@ -132,14 +126,11 @@ export const about = {
   title: "만든 사람을 소개합니다",
   intro:
     "에이다루트에서 대기업 AI 에이전트 프로젝트를 이끌고 있습니다. LangChain, LangGraph, RAG, Vector DB로 일하고, 회사에서 배운 것을 주말에 작게 만들어 봅니다. 그중 쓸모 있는 것은 계속 운영합니다.",
-  // TODO(owner): 공개할 이메일 주소
-  email: undefined as string | undefined,
-  // TODO(owner): LinkedIn URL
-  linkedin: undefined as string | undefined,
-};
-
-export const footer = {
-  copyright: "© 2026 박준형 · jobible_",
+  email: "parkfaith75@gmail.com",
+  linkedin: {
+    href: "https://www.linkedin.com/in/ryanpark75korea/",
+    label: "linkedin.com/in/ryanpark75korea",
+  },
 };
 
 // 상단 메뉴·푸터에서 함께 쓰는 앵커 링크
@@ -148,3 +139,8 @@ export const navLinks = [
   { label: "보관함", href: "#archive" },
   { label: "About", href: "#about" },
 ];
+
+export const footer = {
+  copyright: "© 2026 박준형 · jobible_",
+  links: navLinks.filter((link) => link.href !== "#archive"),
+};
