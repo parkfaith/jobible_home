@@ -1,7 +1,15 @@
 import type { Metadata } from "next";
-import "pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css";
+import localFont from "next/font/local";
 import "./globals.css";
 import { brand, hero, site } from "@/data/projects";
+
+// 페이지에 쓰인 글자만 담은 Pretendard 가변 폰트 (scripts/subset-font.mjs가 빌드 전에 생성)
+const pretendard = localFont({
+  src: "../fonts/pretendard-subset.woff2",
+  variable: "--font-pretendard",
+  weight: "45 920",
+  display: "swap",
+});
 
 // 지정 도메인 → Vercel 운영 주소 → 로컬 순으로 절대 URL 기준을 정한다
 function resolveSiteUrl() {
@@ -33,7 +41,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="ko" className="h-full antialiased">
+    <html lang="ko" className={`${pretendard.variable} h-full antialiased`}>
       <body id="top" className="flex min-h-full flex-col">{children}</body>
     </html>
   );

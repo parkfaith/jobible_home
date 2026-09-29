@@ -34,3 +34,4 @@ jobible_ 시리즈를 소개하는 한 페이지짜리 개인 홈페이지. Next
 - 개발 서버: `npm run dev`
 - 빌드: `npm run build`
 - 린트: `npm run lint`
+- 폰트 서브셋: `npm run fonts:subset` (dev·build 전에 자동 실행. `src/` 문구에 쓰인 글자만 담아 `src/fonts/pretendard-subset.woff2` 생성)

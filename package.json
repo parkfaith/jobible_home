@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "fonts:subset": "node scripts/subset-font.mjs",
+    "predev": "npm run fonts:subset",
     "dev": "next dev",
+    "prebuild": "npm run fonts:subset",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
@@ -22,6 +25,7 @@
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
     "eslint-config-next": "16.3.6",
+    "subset-font": "^2.9.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

@@ -20,7 +20,8 @@
   --color-white: #ffffff;
   --color-transparent: transparent;
 
-  --font-sans: "Pretendard Variable", "Pretendard", "Malgun Gothic", sans-serif;
+  /* --font-pretendard는 layout.tsx의 next/font(사용 글자만 담은 서브셋)가 html에 지정한다 */
+  --font-sans: var(--font-pretendard), "Malgun Gothic", sans-serif;
 
   /* DESIGN.md 4장 타이포그래피 */
   --text-display: 52px;
