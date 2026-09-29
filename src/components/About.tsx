@@ -8,17 +8,23 @@ const EMAIL_TEXT_ID = "about-email";
 export default function About() {
   return (
     <section id="about" className="scroll-mt-6 py-[72px] md:py-[104px]">
-      <Container className="grid grid-cols-1 items-center gap-10 lg:grid-cols-[420px_minmax(0,1fr)] lg:gap-[72px]">
+      {/* 1024~1279px에서는 소개 글 폭 확보를 위해 카드·간격을 줄인다 */}
+      <Container className="grid grid-cols-1 items-center gap-10 lg:grid-cols-[360px_minmax(0,1fr)] lg:gap-12 xl:grid-cols-[420px_minmax(0,1fr)] xl:gap-[72px]">
         <HostCard />
 
         <div className="flex flex-col gap-5">
           <h2 className="text-section">{about.title}</h2>
           <p className="text-[17px] leading-[1.7] text-body">{about.intro}</p>
 
-          <ul className="flex flex-col gap-1.5 text-[15px] text-body">
+          {/* 모바일은 링크 터치 영역 44px 확보 (DESIGN.md 7장) */}
+          <ul className="flex flex-col text-[15px] text-body md:gap-1.5">
             <li>
               이메일 ·{" "}
-              <a id={EMAIL_TEXT_ID} href={`mailto:${about.email}`} className="hover:underline">
+              <a
+                id={EMAIL_TEXT_ID}
+                href={`mailto:${about.email}`}
+                className="inline-flex min-h-11 items-center hover:underline md:min-h-0"
+              >
                 {about.email}
               </a>
             </li>
@@ -28,7 +34,7 @@ export default function About() {
                 href={about.linkedin.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline"
+                className="inline-flex min-h-11 items-center hover:underline md:min-h-0"
               >
                 {about.linkedin.label}
               </a>
