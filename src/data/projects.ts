@@ -3,6 +3,17 @@
 // 브랜드 표기는 대소문자를 지켜 joBiBle_ 로 쓴다
 export const brand = "joBiBle_";
 
+// 검색·공유 메타데이터
+export const site = {
+  title: `${brand} · 박준형`,
+  // OG 이미지·공유 카드에 쓰는 짧은 소개
+  ogCaption: "박준형 · AX Team Lead",
+  locale: "ko_KR",
+  // TODO(owner): 도메인 연결 후 NEXT_PUBLIC_SITE_URL 환경변수로 지정 (예: https://example.com)
+  // 비어 있으면 Vercel 배포 주소, 로컬에서는 localhost를 쓴다
+  url: process.env.NEXT_PUBLIC_SITE_URL,
+};
+
 export type ProjectStatus = "live" | "paused";
 
 export interface Project {
