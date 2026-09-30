@@ -132,8 +132,8 @@ export const about = {
   name: "박준형",
   initial: "준",
   role: "AX Team Lead",
-  // TODO(owner): (선택) 아바타 사진 경로. 비어 있으면 이니셜 원형을 보여준다.
-  avatar: undefined as string | undefined,
+  // 딸이 그려 준 캐릭터 그림(머리·목까지 잘라 원형 프레임에 맞춤). 비어 있으면 이니셜 원형을 보여준다.
+  avatar: "/avatar.png" as string | undefined,
   stats: [
     { value: "21년+", label: "IT 경력" },
     { value: String(liveProjects.length), label: "운영 중 서비스" },
@@ -143,6 +143,12 @@ export const about = {
   // LinkedIn 소개(2026-09 기준)를 요약. 경력 시작 2004-11 → 통계 "21년+"
   intro:
     "20년 넘게 개발자와 PM으로 일해 왔고, 지금은 에이다루트에서 대기업·엔터프라이즈 고객을 위한 LLM 기반 AI Agent 프로젝트를 제안부터 기획·구축·운영까지 이끌고 있습니다. AI Agent, RAG, LangChain으로 일하며 회사에서 배운 것을 주말에 작게 만들어 봅니다. 그중 쓸모 있는 것은 계속 운영합니다.",
+  // 의뢰 문의 안내 (About 하단 박스)
+  inquiry: {
+    title: "의뢰 문의",
+    lead: "만들고 싶은 서비스가 있다면 메일로 알려 주세요. 아래 세 가지만 적어 주시면 답변이 빨라집니다.",
+    items: ["어떤 일을 해결하고 싶은지", "누가 쓰는지", "희망 시기"],
+  },
   email: "parkfaith75@gmail.com",
   linkedin: {
     href: "https://www.linkedin.com/in/ryanpark75korea/",
@@ -155,9 +161,10 @@ export const navLinks = [
   { label: "서비스", href: "#services" },
   { label: "보관함", href: "#archive" },
   { label: "About", href: "#about" },
+  { label: "문의", href: "#contact" },
 ];
 
 export const footer = {
   copyright: "© 2026 박준형 · joBiBle_",
-  links: navLinks.filter((link) => link.href !== "#archive"),
+  links: navLinks.filter((link) => link.href !== "#archive" && link.href !== "#contact"),
 };

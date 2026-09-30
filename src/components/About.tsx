@@ -16,6 +16,18 @@ export default function About() {
           <h2 className="text-section">{about.title}</h2>
           <p className="text-[17px] leading-[1.7] text-body">{about.intro}</p>
 
+          <div id="contact" className="scroll-mt-6 flex flex-col gap-2 rounded-panel bg-surface-soft px-[22px] py-5">
+            <p className="text-base font-bold">{about.inquiry.title}</p>
+            <p className="text-[15px] leading-[1.6] text-body">{about.inquiry.lead}</p>
+            <ol className="flex flex-col text-[15px] leading-[1.6] text-body md:flex-row md:flex-wrap md:gap-x-4">
+              {about.inquiry.items.map((item, index) => (
+                <li key={item}>
+                  {"①②③"[index]} {item}
+                </li>
+              ))}
+            </ol>
+          </div>
+
           {/* 모바일은 링크 터치 영역 44px 확보 (DESIGN.md 7장) */}
           <ul className="flex flex-col text-[15px] text-body md:gap-1.5">
             <li>
