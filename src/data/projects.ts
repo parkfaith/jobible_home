@@ -16,6 +16,18 @@ export const site = {
 
 export type ProjectStatus = "live" | "paused";
 
+/** 서비스 상세 페이지에 보여줄 내용 */
+export interface ProjectDetail {
+  /** 누가 쓰는지 */
+  audience: string;
+  /** 해결하려는 문제 / 만든 이유 */
+  problem: string;
+  /** 주요 기능 (3~4개) */
+  features: string[];
+  /** 기술 스택 */
+  stack: string[];
+}
+
 export interface Project {
   slug: string;
   name: string;
@@ -31,6 +43,8 @@ export interface Project {
   image?: string;
   /** 스크린샷 alt 텍스트 */
   imageAlt?: string;
+  /** 있으면 서비스 상세 페이지(/services/[slug])를 만든다. */
+  detail?: ProjectDetail;
 }
 
 export interface Shortcut {
@@ -59,6 +73,19 @@ export const liveProjects: Project[] = [
     // 공개 예약 첫 화면 (개인정보 없음)
     image: "/screens/onspot.png",
     imageAlt: "joBiBle_onspot 공간 예약 화면. 말로 예약하기 버튼과 안내 문구가 보인다.",
+    // TODO(owner): 상세 문구는 스크린샷과 기존 설명을 근거로 쓴 초안. 검수 필요.
+    detail: {
+      audience: "낙원제일교회에서 공간과 차량을 예약하려는 교인",
+      problem:
+        "시설과 차량 예약을 한곳에서 받고 관리하려고 만들었습니다. 날짜를 고르면 비어 있는 공간을 바로 예약할 수 있고, 승인 결과는 카카오 알림톡으로 전달됩니다.",
+      features: [
+        "날짜를 고르고 비어 있는 공간을 바로 예약",
+        "말로 예약하기: 말씀하시면 공간·날짜·시간·목적을 채워 줍니다",
+        "타이핑으로 예약하기, 내 예약 확인",
+        "승인 결과를 카카오 알림톡으로 안내",
+      ],
+      stack: ["Next.js", "Prisma", "SQLite"],
+    },
   },
   {
     slug: "way",
@@ -70,6 +97,19 @@ export const liveProjects: Project[] = [
     url: "https://jobible-way.vercel.app",
     image: "/screens/way.png",
     imageAlt: "joBiBle_way 시작 화면. '제자의 길을 걷는 여정' 문구와 시작하기 버튼이 보인다.",
+    // TODO(owner): 상세 문구는 스크린샷과 기존 설명을 근거로 쓴 초안. 검수 필요.
+    detail: {
+      audience: "낙원제일교회 제2기 제자훈련에 참여하는 훈련생",
+      problem:
+        "32주 동안 이어지는 제자훈련의 기록이 흩어지지 않도록 한곳에 모았습니다. 훈련 중에 필요한 자료를 따로 찾지 않고 이 페이지에서 이어서 볼 수 있습니다.",
+      features: [
+        "설교 노트와 신앙 일기 기록",
+        "성구 암송 정리",
+        "일일 체크로 훈련 흐름 이어가기",
+        "홈 화면에 추가해 앱처럼 열기",
+      ],
+      stack: ["React", "Hono", "Turso"],
+    },
   },
   {
     slug: "goldendays",
@@ -82,6 +122,19 @@ export const liveProjects: Project[] = [
     url: "https://jobible-golden-days.vercel.app",
     image: "/screens/goldendays.png",
     imageAlt: "joBiBle_goldendays 오늘의 이야기 화면. 날씨 배너와 큰 글씨 성경 구절 카드가 보인다.",
+    // TODO(owner): 상세 문구는 스크린샷과 기존 설명을 근거로 쓴 초안. 검수 필요.
+    detail: {
+      audience: "큰 글씨와 단순한 화면이 편한 시니어 세대",
+      problem:
+        "아버지 같은 시니어 세대가 매일 좋은 글귀를 어렵지 않게 만나도록 만들었습니다. 복잡한 메뉴 없이 오늘의 이야기만 크게 보여 줍니다.",
+      features: [
+        "오늘의 이야기: 글귀·명언·말씀 카드를 매일 전달",
+        "한 장씩 읽기 쉬운 큰 글씨 카드",
+        "오늘의 날씨 안내",
+        "홈 화면에 추가해 앱처럼 열기 (PWA)",
+      ],
+      stack: ["React", "Vite", "PWA"],
+    },
   },
 ];
 
