@@ -178,6 +178,7 @@ export const servicesSection = {
   tagline: "필요한 사람 곁에서 시작했습니다",
   liveLabel: "운영 중",
   placeholderLabel: "스크린샷",
+  directLink: "바로 열기",
 };
 
 // 서비스 상세 페이지(/services/[slug])의 고정 UI 문구

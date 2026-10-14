@@ -22,6 +22,8 @@
 - "휴식 중" 글씨는 대비 확보를 위해 `muted` (DESIGN.md 반영)
 - 정적 사이트라 Codex 코드 점검은 생략. 입력 폼·API 등 기능 추가 시 8장 기준으로 진행
 
+서비스 상세 페이지(1~3단계) 완료: 상세 데이터·초안, `/services/[slug]` 페이지, 메인 카드 → 상세 링크 + "바로 열기 ↗". 지시서는 `docs/handoff-step2-service-detail.md`, `docs/handoff-step3-card-link.md`. 상세 초안의 `TODO(owner)` 항목은 오너 검수 대기.
+
 남은 선택 항목: About 아바타 사진
 
 ## 0. CLI에 처음 붙여넣을 프롬프트
