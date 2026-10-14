@@ -180,6 +180,17 @@ export const servicesSection = {
   placeholderLabel: "스크린샷",
 };
 
+// 서비스 상세 페이지(/services/[slug])의 고정 UI 문구
+export const serviceDetailPage = {
+  back: "전체 서비스",
+  openLive: "운영 화면 열기",
+  audienceTitle: "이런 분들이 씁니다",
+  problemTitle: "만든 이유",
+  featuresTitle: "주요 기능",
+  stackTitle: "기술 스택",
+  othersTitle: "다른 서비스",
+};
+
 export const archiveSection = {
   title: "지난 실험들",
   pausedLabel: "휴식 중",
@@ -213,15 +224,15 @@ export const about = {
   },
 };
 
-// 상단 메뉴·푸터에서 함께 쓰는 앵커 링크
+// 상단 메뉴·푸터에서 함께 쓰는 앵커 링크. 상세 페이지에서도 메인으로 돌아오도록 "/#"로 시작한다
 export const navLinks = [
-  { label: "서비스", href: "#services" },
-  { label: "보관함", href: "#archive" },
-  { label: "About", href: "#about" },
-  { label: "문의", href: "#contact" },
+  { label: "서비스", href: "/#services" },
+  { label: "보관함", href: "/#archive" },
+  { label: "About", href: "/#about" },
+  { label: "문의", href: "/#contact" },
 ];
 
 export const footer = {
   copyright: "© 2026 박준형 · joBiBle_",
-  links: navLinks.filter((link) => link.href !== "#archive" && link.href !== "#contact"),
+  links: navLinks.filter((link) => link.href !== "/#archive" && link.href !== "/#contact"),
 };
